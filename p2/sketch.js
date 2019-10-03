@@ -31,11 +31,11 @@ function draw() {
 	var eyeMovementX = map(mouseX, 0, width, 0, 20);
 	var eyeMovementY = map(mouseY, 0, height, 0, 20);
 	
-		/*if (keyIsPressed) { 
-		mouthMovementY(-20);
+		if (keyIsPressed) { 
+			background(100);
 	} else {
-		mouthMovementY(30);
-	}*/
+		background(240);
+	}
 	
 		if (mouseIsPressed) {
 		eyeSizeHieght = 1;
