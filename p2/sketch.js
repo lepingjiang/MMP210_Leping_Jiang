@@ -5,11 +5,11 @@
 */
 
 var fanCase
-var x = 10//X location
-var y = 50//Y location
-var imgWidth = 640//imgage wdith
-var imgHeight = 360//image height
-var textWidth = 600//text width
+var x = 10;//X location
+var y = 50;//Y location
+var imgWidth = 640;//imgage wdith
+var imgHeight = 360;//image height
+var textWidth = 600;//text width
 
 
 function preload(){
