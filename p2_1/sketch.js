@@ -51,7 +51,7 @@ function draw() {
 	strokeWeight(0);
 	textStyle(NORMAL);
 	textSize(20);
-	text("Press any key and move the mouse around in different area.", x + 100, y + 200, 400);
+	text("Press and hold any key and move the mouse around in different area.", x + 100, y + 200, 400);
 
 	if (keyIsPressed) {
 		if (mouseX < 320 && mouseY < 180) {
