@@ -14,7 +14,7 @@ var tx = 500;//translate position x
 var ty = 200;//translate position y
 var px = 220;//x position of" ! "
 var py = 110;//y position of" ! "
-
+var tool;
 
 function preload() {
  tool = loadImage("tool.png")
@@ -30,7 +30,7 @@ function setup() {
 function draw() {
 	background(245);
 	
-	image(tool, 30, 170)
+	image(tool, 30, 170);
 	
 	textSize(50);//text
 	text('We got fan SPIN', 30, 60, 300);
