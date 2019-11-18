@@ -18,7 +18,7 @@ body
 	margin-left: 20px;
 	margin-right: 20px;
 	font-size: 16px;
-	width: 240px;
+	width: 280px;
 	height: 500px;
 	margin-bottom: 30px;
 }
@@ -71,12 +71,13 @@ footer
 }
 .footerlink
 {
-	background-color: aqua;
-	border: 10px solid aqua;
+	background-color: #3cF;
+	border: 10px solid #3cF;
 	padding: 0px 40px;
 	font-size: 24px;
 	text-decoration: none;
 	font-size: 12px;
+	border-radius: 4px;
 }
 .line2
 {
@@ -90,10 +91,7 @@ footer
 	width: 300px;
 	border-radius: 150px;
 }
-.pj
-{
-	text-align: center;
-}
+
 .img-j
 {
 	width: 300px;
