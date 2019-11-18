@@ -1,32 +1,23 @@
+/*
+	p5 and Arduino
+*/
+
 var serial;
-var portName = "COM6";
+var portName = "COM8";
 var sensorValue;
-var a = 1
-
-function preload() {
-}
-
 
 function setup() {
 	createCanvas(640, 360);
+
 	serial = new p5.SerialPort();
 	serial.on('connected', serverConnected);
 	serial.on('open', portOpen);
 	serial.on('data', serialEvent);
 	serial.on('error', serialError);
 	serial.on('close', portClose);
-	
-	serial.open("COM6");
-}
 
-function draw() {
-	background(245);
+	serial.open(portName);
 	
-	var a = map(sensorValue, 0, 1023, height, 0);
-	fill('gold');
-	noStroke();
-	ellipse(width/2, a, 100);
-
 }
 
 function serverConnected() {
@@ -40,16 +31,27 @@ function portOpen() {
 function portClose() {
 	console.log('The serial port closed.');
 }
-    
+
 function serialError() {
-    console.log("error");
+	console.log("error");
 }
 
 function serialEvent() {
-	var currentString = serial.readLine(); // read the incoming string
-	trim(currentString); // remove any trailing whitespace
+	var currentString = serial.readLine();
+	trim(currentString);
 	if (!currentString) {
-		return; // if the string is empty, do no more
+		return;
 	}
-	sensorValue = currentString; // save it for the draw method
+	sensorValue = currentString;
+}
+
+function draw(){
+	background(200);
+	console.log(sensorValue);
+	
+	if (sensorValue == 1){
+		background(255);
+	} else if (sensorValue == 0){
+		background(10);
+	}
 }
