@@ -30,6 +30,8 @@ function setup() {
 function draw() {
 	background(245);
 	
+	tint(255, 100);
+	
 	image(tool, 30, 170);
 	
 	textSize(50);//text
