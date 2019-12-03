@@ -46,12 +46,8 @@ function serialEvent() {
 }
 
 function draw(){
-	background(200);
+	background(252);
 	console.log(sensorValue);
 	
-	if (sensorValue == 1){
-		background(255);
-	} else if (sensorValue == 0){
-		background(10);
-	}
+	rect()
 }
