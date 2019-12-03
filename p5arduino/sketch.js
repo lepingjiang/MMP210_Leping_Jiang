@@ -3,7 +3,7 @@
 */
 
 var serial;
-var portName = "COM8";
+var portName = "COM9";
 var sensorValue;
 
 function setup() {
@@ -49,9 +49,9 @@ function draw(){
 	background(200);
 	console.log(sensorValue);
 	
-	if (sensorValue == 1){
+	if (sensorValue >50){
 		background(255);
-	} else if (sensorValue == 0){
+	} else if (sensorValue < 50){
 		background(10);
 	}
 }
