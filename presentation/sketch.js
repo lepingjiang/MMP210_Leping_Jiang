@@ -53,7 +53,7 @@ function draw() {
 		text("DHT Humidity sensor", width / 2, 50);
 		
 		textSize(20);
-		text("Use sensor to control the fire of the candle", width / 2 - 100, 250, 200, 100);
+		text("Use sensor to control the fire of the candle, when humidity is to high the fire will be put out", width / 2 - 100, 270, 250);
 		
 		noStroke();
 	fill(10);
@@ -114,8 +114,8 @@ function draw() {
 		fill(255);
 		textSize(30);
 		text("Theme", width / 2 - 50, height / 2 - 150);
-		textSize(40);
-		text("Fire", width / 2 - 50, height / 2 - 100);
+		textSize(20);
+		text("Fire, user can light the candle and put out the fire", width / 2 - 50, height / 2 - 100, 200);
 	}
 
 
