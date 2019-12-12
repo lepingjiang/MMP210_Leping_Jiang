@@ -4,7 +4,7 @@
 	use humidity value to control fire on the candle
 	Leping Jiang
 	12/12/2019
-	Version 1.1.0.2
+	Version 1.1.0.4
 */
 
 var serial;
@@ -112,14 +112,16 @@ function draw() {
 		flashing(lx, ly - 10, cs + 10, iop2 - 3, fr, fg, fb, ft);
 		flashing(lx + 200, ly + 90, cs + 5, iop5, fr, fg, fb, ft);
 		flashing(lx + 250, ly + 110, cs + 8, iop3, fr, fg, fb, ft );
-	}else if (sensorValue > 25 && sensorValue < 35) {
+	}else if (sensorValue > 24 && sensorValue < 35) {
 		background(30);
 		tint(ib, tv);
 		image(candle, lx, ly);
 		tint(ib, iop);
 		image(firea, lx + 100, ly - 105, iw*0.8, ih*0.8);
 		tint(ib, iop2);
-		image(fireb, lx + 85, ly - 80, iw * 0.2, ih * 0.2);
+		image(fireb, lx + 85, ly - 80, iw * 0.2, ih * 0.1);
+		tint(ib, iop3);
+		image(fireb, lx + 140, ly - 120, iw * 0.2, ih * 0.1);
 		flashing(lx - 40, ly - 40, cs, iop, fr, fg, fb, ft);
 		flashing(lx + 60, ly - 20, cs + 25, iop2, fr, fg, fb, ft);
 		flashing(lx + 260, ly - 90, cs - 5, iop4, fr, fg, fb, ft);
@@ -127,7 +129,7 @@ function draw() {
 		flashing(lx - 10, ly + 40, cs, iop, fr, fg, fb, ft);
 		flashing(lx, ly - 10, cs + 10, iop2 - 3, fr, fg, fb, ft);
 		flashing(lx + 250, ly + 110, cs + 8, iop3, fr, fg, fb, ft );
-	}else if (sensorValue > 35 && sensorValue < 45) {
+	}else if (sensorValue > 34 && sensorValue < 45) {
 		background(20);
 		tint(ib, tv);
 		image(candle, lx, ly);
@@ -138,8 +140,8 @@ function draw() {
 		flashing(lx - 40, ly - 40, cs, iop, fr, fg, fb, ft);
 		flashing(lx + 60, ly - 20, cs + 25, iop2, fr, fg, fb, ft);
 		flashing(lx + 250, ly + 110, cs + 8, iop3, fr, fg, fb, ft );
-	}else if (sensorValue > 45 && sensorValue < 55) {
-		background(20);
+	}else if (sensorValue > 44 && sensorValue < 55) {
+		background(15);
 		tint(ib, tv);
 		image(candle, lx, ly);
 		tint(ib, iop);
@@ -149,7 +151,7 @@ function draw() {
 		flashing(lx - 40, ly - 40, cs, iop, fr, fg, fb, ft);
 		flashing(lx - 40, ly - 40, cs, iop, fr, fg, fb, ft);
 		flashing(lx + 60, ly - 20, cs + 25, iop2, fr, fg, fb, ft);
-	} else if (sensorValue > 50){
+	} else if (sensorValue > 56){
 		background(1);
 		tint(ib, tv);
 		image(candle, lx, ly);
