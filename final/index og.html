@@ -3,7 +3,7 @@
 
 <head>
 	<title>Leping Jiang's Portfolio Site</title>
-	<link rel="stylesheet" href="portfolio.css" />
+	<link rel="stylesheet" href=../portfolio.css> 
 	<style>
 		* {
 			margin: 0;
@@ -55,27 +55,25 @@
 
 <body>
 	<header>
-	<img src="img/Untitled-1%20%5BRecovered%5D2.png">
+	<img src="Untitled-1%20%5BRecovered%5D2.png">
 	<h1>Leping Jiang</h1>
 		<nav>
 			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="about.html">About Me</a></li>
-				<li><a href="contact.html">Contact</a></li>
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="../about.html">About Me</a></li>
+				<li><a href="../contact.html">Contact</a></li>
 			</ul>
 		</nav>
 	</header>
-	<h3>About Leping Jiang</h3>
-	<div class="line2"><img src="img/20190902_215036.jpg"  class="img-p"><br>Student at BMCC<br>Major in MultiMedia<br>MMP210-1400</div>
-	<h3>Current Workstation Setup</h3>
-	<div class="line2">AMD Ryzen 9 3900x<br>32GB DDR4 3133Mhz<br>Nvidia Geforce RTX 2080(OptiX Api)</div>
-	<footer>
-		<div class="footernav">
-			<a href="index.html" class="footerlink">Home</a>
-			<a href="about.html" class="footerlink">About Me</a>
-			<a href="contact.html" class="footerlink">Contact</a>
-		</div>
-	</footer>
-</body>
+	<h3>MMP210 Final Project</h3>
+	<p style="text-align: center; width: 480px; margin: auto">With Arduino and dht humidity sensor connected, the humidity change can cause fire on the candle to change, when humidity is too high the fire will be put out.<br> If Arduino and dht humidity sensor isn't connected you can use arrow key on the your keyboard to change the value.</p>
+	<div class="pj">
+		<script src="p5.min.js"></script>
+		<script src="p5.sound.js"></script>
+		<script src="p5.serialport.js"></script>
+		<script src="sketch.js"></script>
+	</div>
+
+	</body>
 
 </html>
