@@ -2,70 +2,61 @@
 <html>
 
 <head>
-	<title>Leping Jiang's Portfolio Site</title>
-	<link rel="stylesheet" href=../portfolio.css> 
+	<title>Leping Jiang</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../assets/css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700i&display=swap" rel="stylesheet">
 	<style>
-		* {
-			margin: 0;
-			padding: 0;
-			box-sizing: border-box;
-		}
-		
-		header{
-			display: flex;
-			padding: 10px 5px;
-			height: 120px;
-		}
-		header img{
-			padding-left: 0px;
-			height: 80px;
-			width: 80px
-		}
-		header h1{
-			padding-left: 30px;
-			font-size: 40px;
-			padding-top: 20px;
-			color: #3cF
-		}
-		nav ul{
-			list-style: none;
-		}
-		li{
-			float: left;
-			margin-top: 25px;
-			margin-left: 20px;
-			margin-right: 20px;
-			font-size: 20px;
-			
-		}
-		li a{
-			display: inline-block;
-			padding: 5px;
-			border: 3px solid #00f;
-			border-radius: 4px;
-			color: #00f;
-			text-decoration: none;
-		}
-		canvas{
+	canvas{
 			display: block;
 			margin: 0 auto;
 		}
+
 	</style>
 </head>
 
 <body>
-	<header>
-	<img src="Untitled-1%20%5BRecovered%5D2.png">
-	<h1>Leping Jiang</h1>
+
+	<!--navigation-->
+	<header id="map3">
+		<h1><a href="../index.html" id="logo"><img src="../assets/img/jiang_logo.svg"></a></h1>
+
+		<button id="mb"><i class="fa fa-bars"></i></button>
 		<nav>
 			<ul>
-				<li><a href="../index.html">Home</a></li>
-				<li><a href="../about.html">About Me</a></li>
-				<li><a href="../contact.html">Contact</a></li>
+				<li>
+					<a href="../index.html"><img src="../assets/img/leping_home.svg" class="imhome"></a>
+				</li>
+				<li>
+					<a href="https://lepingjiang.github.io/leping_jiang_mmp240final/work.html.html"><img src="../assets/img/portfolioc.svg" class="import"></a>
+				</li>
+				<li>
+					<a href="../contact.html"><img src="../assets/img/jiang_contact.svg" class="imcontact"></a>
+				</li>
 			</ul>
 		</nav>
 	</header>
-	<h3>MMP210 Self Portrait 3: Interaction</h3>
+
+	<!--pop up menu(technically) and senondary menu-->
+	<div class="dropdown">
+		<button class="dropbtn"><img src="../assets/img/lj.svg" alt=""></button>
+		<div class="dropdown-content">
+			<a href="index.html#map3"><img src="../assets/img/up.svg" alt=""></a>
+			<a href="../index.html"><img src="../assets/img/h.svg" alt=""></a>
+			<a href="https://lepingjiang.github.io/leping_jiang_mmp240final/work.html.html"><img src="../assets/img/p.svg" alt=""></a>
+			<a href="../contact.html"><img src="../assets/img/c.svg" alt=""></a>
+		</div>
+	</div>
+
+	<!--Parallax background-->
+	<div>
+		<img src="../assets/img/leoabackground.svg" class="oa">
+	</div>
+
+
+		<h3 style="text-align: center; margin: 20px">MMP210 Self Portrait 3: Interaction</h3>
 	<p style="text-align: center">Move the mouse around <br>And press down the mouse</p>
 	<div class="pj">
 		<script src="p5.min.js"></script>
@@ -73,6 +64,21 @@
 		<canvas width="500px" height="600px" style="width: 0px; height: 0px;"></canvas>
 	</div>
 
-	</body>
 
-</html>
+	<!--maybe copyrighted?-->
+	<footer style="position: fixed; bottom: 0px; width: 100%">
+		<p class="tc a1 p5">&copy; 2019 All Right Reserved. Last Update 2/1/2020(Style change to V2)</p>
+	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+		$('#mb').click(function() {
+			$('nav').slideToggle();
+		});
+
+		$(window).resize(function() {
+			if (window.innerWidth > 499) {
+				$('nav').show();
+			}
+		});
+	</script>
+</body></html>
